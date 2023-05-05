@@ -1,3 +1,4 @@
+# 다른방법 풀이
 def solution(arr):
     answer = []
     j = -1
