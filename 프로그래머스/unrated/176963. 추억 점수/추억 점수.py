@@ -1,3 +1,4 @@
+# 다른 풀이
 def solution(name, yearning, photo):
     answer = []
     for peoples in photo:
