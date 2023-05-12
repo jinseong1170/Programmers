@@ -4,14 +4,14 @@ def solution(s):
     
     for i in s:
         if i == '(':
-            stack.append(i)
+            stack.append(i)  # i가 '('일 경우 추가
         else:
             try :
-                stack.pop()
+                stack.pop() # i가 ')'일 경우 리스트에서 하나 꺼냄
             except: 
-                return False
+                return False # 리스트에 꺼낼게 없으면 false
             
-    if len(stack) == 0:
-        return True
+    if len(stack) == 0 :
+        return True # 문자열 순회가 끝나고 리스트가 비어있다면 True
     else: 
-        return False
+        return False # 값이 있으면 False
