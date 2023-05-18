@@ -1,12 +1,10 @@
-def solution(people, limit) :
-    answer = 0
+# 다른 풀이
+def solution(people, limit):
     people.sort()
-
-    a = 0
-    b = len(people) - 1
-    while a < b :
-        if people[b] + people[a] <= limit :
-            a += 1
-            answer += 1
-        b -= 1
-    return len(people) - answer
+    j = 0 
+    i = len(people)-1
+    while (i > j):
+        if (people[i] + people[j]<= limit):
+            j+=1
+        i-= 1
+    return len(people)-j
